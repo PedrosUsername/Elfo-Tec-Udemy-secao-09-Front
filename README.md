@@ -1,27 +1,33 @@
-# CustomersApp
+## Angular + Spring Boot: Udemy Fullstack
+## Seção 7: Template da Aplicação
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
+### Pré-requisitos
+Angular: 12.2.15<br>
+Angular CLI: 12.2.14<br>
+Node: 14.17.6<br>
+Package Manager: npm 6.14.15<br>
+<br>
+@angular-devkit/architect       0.1202.14,
+@angular-devkit/build-angular   12.2.14,
+@angular-devkit/core            12.2.14,
+@angular-devkit/schematics      12.2.14,
+@angular/cli                    12.2.14,
+@schematics/angular             12.2.14,
+rxjs                            6.6.7,
+typescript                      4.3.5,
 
-## Development server
+### Rodando o projeto localmente
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Abra o terminal, e ponha o servidor para rodar com:
+```
+$ ng serve
+```
+em seguida, no navegador, acesse a url:
+> 127.0.0.1:4200/
 
-## Code scaffolding
+### Observações:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
++ O audio do curso poderia ser melhor
++ Eu não instalei o Bootstrap, preferi utilizar somente a CDN
++ A versão mais atual do SB Admin não usa jQuery, então eu decidi fazer diferente
++ Curti muito o SB Admin. Me vejo usando o template muito em breve
