@@ -1,5 +1,5 @@
 ## Angular + Spring Boot: Udemy Fullstack
-## Seção 7: Template da Aplicação
+## Seção 8: Cadastro e listagem de clientes
 
 ### Pré-requisitos
 Angular: 12.2.15<br>
@@ -18,14 +18,19 @@ typescript                      4.3.5,
 
 ### Rodando o projeto localmente
 
-Abra o terminal, e ponha o servidor para rodar com:
+Abra o terminal, e ponha o Front-End para rodar com:
 ```
 $ ng serve
 ```
-em seguida, no navegador, acesse a url:
+em seguida, ponha o Back-End (Seção 05) para rodar com:
+```
+$ ./mvnw spring-boot:run
+```
+Finalmente, no navegador, acesse a url:
 > 127.0.0.1:4200/
 
 ### Observações:
 
 + O audio do curso poderia ser melhor
 + È engraçado como podemos facilmente nos perder com os conceitos mais básicos do angular<br>(view, template, modulo, etc...)
++ Fui até a aula 67 dessa seção. Volto depois de explorar o resto do curso.
