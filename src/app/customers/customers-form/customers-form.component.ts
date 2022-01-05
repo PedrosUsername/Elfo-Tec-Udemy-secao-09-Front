@@ -10,15 +10,26 @@ import { Customer } from '../customers';
 export class CustomersFormComponent implements OnInit {
 
   customer!: Customer;
+  success = false;
+  errors!: String[];
 
   constructor(private service: CustomersService) {
-    this.customer = service.getCustomers();
+    this.customer = new Customer();
   }
 
   ngOnInit(): void {
   }
 
   onSubmit(): void {
-    this.service.logSomething();
+    this.service
+    .salvar(this.customer)
+      .subscribe( response => {
+        this.success = true;
+        this.errors = [];
+        this.customer = response;
+      } , errorResponse => {
+        this.success = false;
+        this.errors = ['erro'];
+      })
   }
 }
