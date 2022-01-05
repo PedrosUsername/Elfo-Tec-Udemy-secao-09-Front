@@ -28,6 +28,4 @@ em seguida, no navegador, acesse a url:
 ### Observações:
 
 + O audio do curso poderia ser melhor
-+ Eu não instalei o Bootstrap, preferi utilizar somente a CDN
-+ A versão mais atual do SB Admin não usa jQuery, então eu decidi fazer diferente
-+ Curti muito o SB Admin. Me vejo usando o template muito em breve
++ È engraçado como podemos facilmente nos perder com os conceitos mais básicos do angular<br>(view, template, modulo, etc...)

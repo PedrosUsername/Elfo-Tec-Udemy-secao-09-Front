@@ -3,48 +3,49 @@
     <li class="breadcrumb-item active">Cadastro</li>
 </ol>
 <div class="container">
-    <form >
+    <form #customerForm="ngForm" (ngSubmit)="onSubmit()" >
 
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label>ID:</label>
-                    <input type="text"  name="id" class="form-control" disabled="true" />
+                    <input type="text" [ngModel]="customer.id" name="id" class="form-control" disabled="true" />
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="form-group">
                     <label>Data Cadastro:</label>
-                    <input type="text" class="form-control" name="dataCadastro" disabled="true"  />
+                    <input type="text" class="form-control" name="dataCadastro"
+                           [ngModel]="customer.date" disabled="true"  />
                 </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
-                    <label>name: *</label>
-                    <input type="text"  name="id" class="form-control" />
+                    <label>Nome: *</label>
+                    <input type="text" class="form-control" 
+                           [(ngModel)]="customer.name" name="nome"   />
                 </div>
             </div>
-
             <div class="col-md-6">
                 <div class="form-group">
                     <label>CPF: *</label>
-                    <input type="text" class="form-control" name="dataCadastro" />
+                    <input type="text" class="form-control" 
+                            [(ngModel)]="customer.cpf" name="cpf"  />
                 </div>
             </div>
         </div>
         <br>
         <div class="row">
-
             <div class="col-md-3">
                 <button type="submit" class="btn btn-success">
                     <i class="fa fa-save" ></i> Salvar
                 </button>
             </div>
-
+     
         </div>
-
     </form>
 </div>
