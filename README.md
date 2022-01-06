@@ -35,3 +35,4 @@ Finalmente, no navegador, em duas janelas distintas, acesse as urls:
 
 + O audio do curso poderia ser melhor
 + Fui até a aula 86 desse módulo. Volto aqui depois de explorar mais o curso.
++ Eu não conhecia o truque das variaveis de ambiente (src/environments)
