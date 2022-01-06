@@ -22,15 +22,16 @@ Abra o terminal, e ponha o Front-End para rodar com:
 ```
 $ ng serve
 ```
-em seguida, ponha o Back-End (Seção 05) para rodar com:
+em seguida, ponha o Back-End (Seção 09 Back) para rodar com:
 ```
 $ ./mvnw spring-boot:run
 ```
-Finalmente, no navegador, acesse a url:
+Finalmente, no navegador, em duas janelas distintas, acesse as urls:
 > 127.0.0.1:4200/
+&
+> 127.0.0.1:8080/h2-console
 
 ### Observações:
 
 + O audio do curso poderia ser melhor
-+ È engraçado como podemos facilmente nos perder com os conceitos mais básicos do angular<br>(view, template, modulo, etc...)
-+ Fui até a aula 67 dessa seção. Volto depois de explorar o resto do curso.
++ Fui até a aula 86 desse módulo. Volto aqui depois de explorar mais o curso.
