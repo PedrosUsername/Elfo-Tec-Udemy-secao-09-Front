@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component';
 import { CustomersModule } from './customers/customers.module';
+import { ServicesModule } from './services/services.module';
+import { ServicesService } from './services.service';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,12 @@ import { CustomersModule } from './customers/customers.module';
 
     AppRoutingModule,
     TemplateModule,
-    CustomersModule
+    CustomersModule,
+    ServicesModule
   ],
-  providers: [],
+  providers: [
+    ServicesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
