@@ -28,7 +28,9 @@ $ ./mvnw spring-boot:run
 ```
 Finalmente, no navegador, em duas janelas distintas, acesse as urls:
 > 127.0.0.1:4200/
+
 &
+
 > 127.0.0.1:8080/h2-console
 
 ### Observações:
@@ -36,3 +38,4 @@ Finalmente, no navegador, em duas janelas distintas, acesse as urls:
 + O audio do curso poderia ser melhor
 + Fui até a aula 86 desse módulo. Volto aqui depois de explorar mais o curso.
 + Eu não conhecia o truque das variaveis de ambiente (src/environments)
++ A query feita no repositorio de Serviços do spring é algo assustador.
