@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
+import { User } from './user';
 
 @Component({
   selector: 'app-login',
@@ -16,10 +18,21 @@ export class LoginComponent {
 
   constructor(
     private router: Router,
+    private authService: AuthService
   ) { }
 
   onSubmit(){
-    console.log("user: "+ this.username +", psswrd: "+ this.password);
+    this.authService
+          .tentarLogar(this.username, this.password)
+          .subscribe(response => {
+            const access_token = JSON.stringify(response);
+            console.log(access_token);
+            localStorage.setItem('access_token', access_token)
+            this.router.navigate(['/home'])
+          }, errorResponse => {
+            this.errors = ['Usuário e/ou senha incorreto(s).']
+          })
+
   }
 
   preparaCadastrar(event: any){
@@ -32,5 +45,20 @@ export class LoginComponent {
   }
 
   cadastrar(){
+    const usuario: User = new User();
+    usuario.username = this.username;
+    usuario.password = this.password;
+    this.authService
+        .salvar(usuario)
+        .subscribe( response => {
+            this.mensagemSucesso = "Cadastro realizado com sucesso! Efetue o login.";
+            this.cadastrando = false;
+            this.username = '';
+            this.password = '';
+            this.errors = []
+        }, errorResponse => {
+            this.mensagemSucesso = '';
+            this.errors = errorResponse.error.errors;
+        })
   }
 }
